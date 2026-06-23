@@ -1,56 +1,173 @@
-\# Customer Churn Prediction (Streamlit)
+# Customer Churn Prediction System
 
+## Overview
+The Customer Churn Prediction System is a Machine Learning web application that predicts whether a customer is likely to leave a company's service based on customer subscription and usage information.
 
+The application provides:
+- Customer churn prediction
+- Prediction history tracking
+- Analytics dashboard
+- Interactive Streamlit interface
 
-This project predicts whether a customer is likely to churn using a deep learning ANN model.
+---
 
+## Features
 
+### Prediction Module
+- Enter customer details
+- Generate churn predictions in real time
+- User-friendly interface
 
- **Tech Stack**
+### History Module
+- Stores prediction results
+- Displays all previous predictions
+- CSV-based storage
 
-\- Python
+### Analytics Module
+- Visualizes prediction trends
+- Displays churn distribution charts
+- Helps analyze prediction history
 
-\- Streamlit
+### About Module
+- Provides project information
+- Explains workflow and technologies used
 
-\- PyTorch
+---
 
-\- Scikit-learn
+## Technologies Used
 
+- Python
+- Streamlit
+- Pandas
+- NumPy
+- Scikit-learn
+- Joblib / Pickle
+- Matplotlib
+- Git & GitHub
 
+---
 
- **Features**
+## Machine Learning Workflow
 
-\- User-friendly Streamlit UI
+1. Data Collection
+2. Data Preprocessing
+3. Feature Selection
+4. Model Training
+5. Model Evaluation
+6. Model Saving
+7. Prediction Generation
+8. Result Storage
+9. Analytics Visualization
 
-\- Predicts churn probability
+---
 
-\- Binary classification (Churn / No Churn)
+## Dataset Features
 
+The model uses the following customer attributes:
 
+- Gender
+- Senior Citizen
+- Tenure
+- Internet Service
+- Contract Type
+- Payment Method
+- Monthly Charges
+- Total Charges
 
- **Dataset**
+---
 
-The dataset used in this project is from \*\*Kaggle\*\*:  
+## Project Structure
 
-\[Telco Customer Churn Dataset](https://www.kaggle.com/datasets/blastchar/telco-customer-churn)
+```text
+Customer_Churn_Project/
+│
+├── app.py
+├── prediction_history.csv
+├── requirements.txt
+├── README.md
+│
+├── model/
+│   └── churn_model.pkl
+│
+├── pages/
+│   ├── prediction.py
+│   ├── History.py
+│   ├── Analytics.py
+│   └── About.py
+│
+└── utils/
+    └── predictor.py
+```
 
+---
 
+## Installation
 
-> Make sure to download the dataset and place it in your project folder if you want to retrain the model.
-
-
-
-**How to Run**
-
-
-
-\### 1. Create Virtual Environment
+### Clone Repository
 
 ```bash
+git clone <repository-url>
+cd Customer_Churn_Project
+```
 
-python -m venv churn\_env
+### Create Virtual Environment
 
-churn\_env\\Scripts\\activate
+```bash
+python -m venv churn_env
+```
 
+### Activate Environment
 
+Windows:
 
+```bash
+churn_env\Scripts\activate
+```
+
+### Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## Run Application
+
+```bash
+streamlit run app.py
+```
+
+Open in browser:
+
+```text
+http://localhost:8501
+```
+
+---
+
+## Sample Workflow
+
+1. Open Prediction page
+2. Enter customer information
+3. Click Predict
+4. View prediction result
+5. Check History page
+6. Analyze trends in Analytics page
+
+---
+
+## Future Enhancements
+
+- Churn probability percentage
+- Database integration
+- User authentication
+- Cloud deployment
+- Automated model retraining
+- Advanced analytics dashboard
+
+---
+
+## Author
+
+Developed as a Machine Learning and Streamlit project for Customer Churn Prediction.
