@@ -167,7 +167,5 @@ http://localhost:8501
 - Advanced analytics dashboard
 
 ---
-
-## Author
-
-Developed as a Machine Learning and Streamlit project for Customer Churn Prediction.
+## App link
+https://churnchatbot-6avqd3ciqj4xmegcfabv2n.streamlit.app/
