@@ -1,0 +1,2 @@
+CustomerID,Gender,SeniorCitizen,Tenure,InternetService,Contract,PaymentMethod,MonthlyCharges,TotalCharges,Prediction,Timestamp
+,Female,1,2,DSL,Month-to-month,Electronic check,95.92,191.0,0.5545443296432495,2026-06-23 18:30:26
